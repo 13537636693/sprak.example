@@ -1,0 +1,35 @@
+查看ZOMBIE进程
+ps -el| grep Z
+ps -ef |grep defunct
+
+
+查看磁盘目录使用情况
+du -h --max-depth=1 /u01/backup
+
+
+查看哪个线程占用最多资源
+ps mp 21520 -o THREAD,tid > /fund_mpay_acc_clear_provider-top-21520.log
+把占用最多CPU的TID转为16进制
+结合jstack 【0x???】
+
+
+查看进程启动目录
+lsof -p 21520 |grep cwd
+
+对JAVA进程堆进行拍照
+
+
+
+对JAVA进程线程栈进行拍照
+
+jmap -dump:format=b,file=/fund_mpay_acc_clear_provider-jmap-21520.log 21520
+jstack 21520 > fund_mpay_acc_clear_provider-jstack-21520.log
+ps mp 21520 -o THREAD,tid > /fund_mpay_acc_clear_provider-top-21520.log
+
+
+rsync -aSvH /home/N22/test1/* /home/N22/test2/
+
+
+Log4j日志2.0配置 （编码）
+http://home.bdqn.cn/thread-39855-1-1.html
+5月离职，5月公积金仍在公司交，6月已停缴。
