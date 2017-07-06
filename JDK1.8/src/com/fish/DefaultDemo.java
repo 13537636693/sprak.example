@@ -2,7 +2,7 @@ package com.fish;
 
 import java.util.function.Supplier;
 
-interface Defaulable {
+interface DefaultDemo {
 
 	default String notRequired() {
 		return "Default implementation";
@@ -18,30 +18,30 @@ interface Defaulable {
 
 	static interface DefaulableFactory {
 		// Interfaces now allow static methods
-		static Defaulable create(Supplier<Defaulable> supplier) {
+		static DefaultDemo create(Supplier<DefaultDemo> supplier) {
 			return supplier.get();
 		}
 
 	}
 
-	class OverridableImpl implements Defaulable {
+	class OverridableImpl implements DefaultDemo {
 		@Override
 		public String notRequired() {
 			return "Overridden implementation";
 		}
 	}
 
-	static class DefaultableImpl implements Defaulable {
+	static class DefaultableImpl implements DefaultDemo {
 	}
 
 	public static void main(String[] args) {
 		// 1¡£ Defaulable defaulable
 		// =DefaulableFactory.create(DefaultableImpl::new);
 		// 2.
-		Defaulable defaulable = DefaulableFactory
-				.create(new Supplier<Defaulable>() {
+		DefaultDemo defaulable = DefaulableFactory
+				.create(new Supplier<DefaultDemo>() {
 					@Override
-					public Defaulable get() {
+					public DefaultDemo get() {
 						return new DefaultableImpl();
 					}
 				});

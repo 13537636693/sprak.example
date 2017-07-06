@@ -2,6 +2,7 @@ package com.fish;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -39,5 +40,6 @@ public class Java8 {
 		
 		double bill2 =costBeforeTax.stream().map((i)-> i+i*0.12).reduce((a,b)->a+b).get();
 		System.out.println("Total : " + bill2);
+		
 	}
 }
