@@ -175,14 +175,14 @@
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.16.jar"/>
 	<classpathentry kind="lib" path="lib/snappy-0.2.jar"/>
 	<classpathentry kind="lib" path="lib/snappy-java-1.1.2.6.jar"/>
-	<classpathentry kind="lib" path="lib/spark-catalyst_2.11-2.1.1.jar"/>
-	<classpathentry kind="lib" path="lib/spark-core_2.11-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/spark-catalyst_2.11-2.1.1.jar" sourcepath="D:/git-spark-repository/spark"/>
+	<classpathentry kind="lib" path="lib/spark-core_2.11-2.1.1.jar" sourcepath="D:/git-spark-repository/spark"/>
 	<classpathentry kind="lib" path="lib/spark-graphx_2.11-2.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spark-hive_2.11-2.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spark-hive-thriftserver_2.11-2.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spark-launcher_2.11-2.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spark-mesos_2.11-2.1.1.jar"/>
-	<classpathentry kind="lib" path="lib/spark-mllib_2.11-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/spark-mllib_2.11-2.1.1.jar" sourcepath="D:/git-spark-repository/spark"/>
 	<classpathentry kind="lib" path="lib/spark-mllib-local_2.11-2.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spark-network-common_2.11-2.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/spark-network-shuffle_2.11-2.1.1.jar"/>
